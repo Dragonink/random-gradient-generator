@@ -1,0 +1,21 @@
+[workspace]
+members = ["cli"]
+default-members = ["cli"]
+[workspace.package]
+authors = ["Dragonink (https://github.com/Dragonink)"]
+description = "Tool to generate random gradient images using Perlin noise"
+edition = "2021"
+publish = false
+
+
+[package]
+name = "random_gradient_generator"
+version = "1.0.0"
+authors = { workspace = true }
+description = { workspace = true }
+edition = { workspace = true }
+publish = { workspace = true }
+
+[dependencies]
+bmp = "0"
+simdnoise = "3"
